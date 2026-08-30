@@ -36,10 +36,10 @@ export default function Overlay() {
 
   // Removed "absolute" so this overlay correctly stretches the page height for scrolling!
   return (
-    <div ref={overlayRef} className="w-full pointer-events-none flex flex-col items-center pb-20">
+    <div ref={overlayRef} className="w-full pointer-events-none flex flex-col items-center pb-20 overflow-hidden">
       
       {/* Brand Header */}
-      <div className="fixed top-8 left-8 pointer-events-auto z-50">
+      <div className="absolute top-8 left-8 pointer-events-auto z-50">
         <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white">
           Sanjeev <span className="text-gold">Sharath Kumar</span>
         </h1>
