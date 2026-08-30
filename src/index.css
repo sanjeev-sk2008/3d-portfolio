@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0A192F;
+  --color-navy-light: #112240;
+  --color-gold: #FFD700;
+  --color-gold-dark: #D4AF37;
+  --color-white: #FFFFFF;
+  --color-white-dim: #F0F0F0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for smoother aesthetic */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
